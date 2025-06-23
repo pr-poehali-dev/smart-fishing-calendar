@@ -9,6 +9,8 @@ import Diary from "./pages/Diary";
 import Map from "./pages/Map";
 import Stats from "./pages/Stats";
 import Profile from "./pages/Profile";
+import Login from "./pages/Login";
+import Register from "./pages/Register";
 import NotFound from "./pages/NotFound";
 
 const queryClient = new QueryClient();
@@ -26,6 +28,8 @@ const App = () => (
           <Route path="/map" element={<Map />} />
           <Route path="/stats" element={<Stats />} />
           <Route path="/profile" element={<Profile />} />
+          <Route path="/login" element={<Login />} />
+          <Route path="/register" element={<Register />} />
           <Route path="*" element={<NotFound />} />
         </Routes>
       </BrowserRouter>
