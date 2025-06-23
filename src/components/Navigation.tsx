@@ -14,20 +14,22 @@ const Navigation = () => {
   ];
 
   return (
-    <nav className="fixed bottom-0 left-0 right-0 bg-card/95 backdrop-blur-sm border-t border-border z-50">
-      <div className="flex justify-around items-center py-2">
+    <nav className="fixed bottom-0 left-0 right-0 bg-card/95 backdrop-blur-sm border-t border-border z-50 safe-area-pb">
+      <div className="flex justify-between items-center px-2 py-1 max-w-screen-sm mx-auto">
         {navItems.map(({ path, icon, label }) => (
           <Link
             key={path}
             to={path}
-            className={`flex flex-col items-center py-2 px-3 rounded-lg transition-colors duration-200 ${
+            className={`flex flex-col items-center py-1 px-1 rounded-lg transition-colors duration-200 min-w-0 flex-1 ${
               location.pathname === path
                 ? "text-primary bg-primary/10"
                 : "text-muted-foreground hover:text-foreground hover:bg-muted/50"
             }`}
           >
-            <Icon name={icon} size={24} />
-            <span className="text-xs mt-1 font-medium">{label}</span>
+            <Icon name={icon} size={20} />
+            <span className="text-[10px] mt-0.5 font-medium truncate leading-tight">
+              {label}
+            </span>
           </Link>
         ))}
       </div>
