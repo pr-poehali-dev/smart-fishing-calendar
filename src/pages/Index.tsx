@@ -11,7 +11,7 @@ const Index = () => {
       {/* Заголовок */}
       <header className="p-6 text-center">
         <h1 className="font-heading text-3xl font-bold text-foreground mb-2">
-          🎣 РыбалкаПро
+          FishLog
         </h1>
         <p className="text-muted-foreground">Твой помощник на рыбалке</p>
       </header>
