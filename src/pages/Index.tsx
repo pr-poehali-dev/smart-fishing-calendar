@@ -10,7 +10,8 @@ const Index = () => {
     <div className="min-h-screen bg-gradient-to-br from-background via-morning-mist to-background pb-20">
       {/* Заголовок */}
       <header className="p-6 text-center">
-        <h1 className="font-heading text-3xl font-bold text-foreground mb-2">
+        <h1 className="font-heading text-3xl font-bold text-foreground mb-2 text-center">
+          {" "}
           FishLog
         </h1>
         <p className="text-muted-foreground">Твой помощник на рыбалке</p>
