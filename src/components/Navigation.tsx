@@ -6,7 +6,7 @@ const Navigation = () => {
 
   const navItems = [
     { path: "/", icon: "Home", label: "Главная" },
-    { path: "/calendar", icon: "Calendar", label: "Календарь" },
+    { path: "/marker", icon: "Target", label: "Маркер" },
     { path: "/diary", icon: "BookOpen", label: "Дневник" },
     { path: "/map", icon: "Map", label: "Карта" },
     { path: "/stats", icon: "BarChart3", label: "Статистика" },

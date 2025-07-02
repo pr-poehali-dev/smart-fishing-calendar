@@ -22,16 +22,16 @@ const Index = () => {
         {/* Быстрые действия */}
         <div className="grid grid-cols-2 gap-4">
           <FishingCard
-            title="Прогноз клева"
-            subtitle="Сегодня отлично!"
-            icon={<Icon name="Calendar" size={24} className="text-white" />}
-            gradient="water"
+            title="Маркерная карта"
+            subtitle="Разметка места"
+            icon={<Icon name="Target" size={24} className="text-white" />}
+            gradient="sunset"
           >
             <p className="text-sm">
-              Индекс: <span className="font-bold text-primary">8.5/10</span>
+              🎯 <span className="font-bold text-primary">Точки заброса</span>
             </p>
             <p className="text-xs text-muted-foreground">
-              Лучшее время: 6:00-10:00
+              Лучи, дистанция, рельеф
             </p>
           </FishingCard>
 
